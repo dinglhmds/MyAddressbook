@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pinyin.txt</file>
+        <file>pictures/background.png</file>
+        <file>pictures/icon.jpg</file>
+    </qresource>
+</RCC>

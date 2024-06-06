@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>794</width>
+    <height>518</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources.qrc">
+    <normaloff>:/pictures/icon.jpg</normaloff>:/pictures/icon.jpg</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTableView" name="tableView">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>745</width>
+      <height>460</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>745</width>
+      <height>460</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>745</width>
+      <height>460</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="searchEdit">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>641</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="searchButton">
+    <property name="geometry">
+     <rect>
+      <x>660</x>
+      <y>470</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>91</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>91</width>
+      <height>21</height>
+     </size>
+    </property>
+    <property name="text">
+     <string>搜索</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>794</width>
+     <height>17</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="viewMenu">
+    <property name="title">
+     <string>查看</string>
+    </property>
+    <addaction name="allAct"/>
+    <addaction name="relativeAct"/>
+    <addaction name="friendAct"/>
+    <addaction name="classmateAct"/>
+    <addaction name="colleagueAct"/>
+   </widget>
+   <widget class="QMenu" name="editMenu">
+    <property name="title">
+     <string>编辑</string>
+    </property>
+    <addaction name="modifyAct"/>
+    <addaction name="delAct"/>
+    <addaction name="addAct"/>
+   </widget>
+   <widget class="QMenu" name="sortMenu">
+    <property name="title">
+     <string>排序</string>
+    </property>
+    <addaction name="sortName"/>
+    <addaction name="sortBirthday"/>
+   </widget>
+   <widget class="QMenu" name="moreMenu">
+    <property name="title">
+     <string>更多</string>
+    </property>
+    <addaction name="countBirthMonthAct"/>
+    <addaction name="sendCongratulationAct"/>
+   </widget>
+   <addaction name="viewMenu"/>
+   <addaction name="editMenu"/>
+   <addaction name="sortMenu"/>
+   <addaction name="moreMenu"/>
+  </widget>
+  <action name="allAct">
+   <property name="text">
+    <string>全部</string>
+   </property>
+  </action>
+  <action name="relativeAct">
+   <property name="text">
+    <string>亲戚</string>
+   </property>
+  </action>
+  <action name="friendAct">
+   <property name="text">
+    <string>朋友</string>
+   </property>
+  </action>
+  <action name="classmateAct">
+   <property name="text">
+    <string>同学</string>
+   </property>
+  </action>
+  <action name="colleagueAct">
+   <property name="text">
+    <string>同事</string>
+   </property>
+  </action>
+  <action name="modifyAct">
+   <property name="text">
+    <string>修改</string>
+   </property>
+  </action>
+  <action name="delAct">
+   <property name="text">
+    <string>删除</string>
+   </property>
+  </action>
+  <action name="addAct">
+   <property name="text">
+    <string>新建</string>
+   </property>
+  </action>
+  <action name="sortName">
+   <property name="text">
+    <string>按姓氏首字母</string>
+   </property>
+  </action>
+  <action name="sortBirthday">
+   <property name="text">
+    <string>按出生日期</string>
+   </property>
+  </action>
+  <action name="countBirthMonthAct">
+   <property name="text">
+    <string>统计各月份出生人数</string>
+   </property>
+  </action>
+  <action name="sendCongratulationAct">
+   <property name="text">
+    <string>近期生日发送祝福</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
